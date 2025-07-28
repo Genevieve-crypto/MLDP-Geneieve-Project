@@ -83,7 +83,7 @@ if st.button("Predict"):
     
     # Predict
     y_unseen_pred = model.predict(df_input_reindex)[0]
-    st.success(f"Predicted Insurance Response : ${y_unseen_pred:,.2f}")
+    st.success(f"Predicted Insurance Response : {y_unseen_pred:,.2f}%")
 
 st.markdown(f''' <style> .stApp {{
     background-image: url("https://media.istockphoto.com/id/1828732247/photo/different-umbrella.jpg?s=2048x2048&w=is&k=20&c=Sw2fqnolwOM-ZINwgbiaoS_aAY6Zuf3GgDckC1V2QSs=");
