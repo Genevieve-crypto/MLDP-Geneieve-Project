@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 
-model = joblib.load("insurance_lr_22July.pkl")
+model = joblib.load("insurance_model_22July.pkl")
 
 # Streamlit app
 st.title("Insurance Response Prediction")
