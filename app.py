@@ -106,7 +106,7 @@ st.markdown(f''' <style> .stApp {{
     }}
 
     selectbox {
-        font-size: 6rem !important;
+        font-size: 6rem !important;}
 
  
     
