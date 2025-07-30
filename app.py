@@ -94,6 +94,6 @@ if st.button("Predict"):
     
 
 st.markdown(f''' <style> .stApp {{
-    background-image: st.image("background.jpg", use_column_width=True);
+    background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/background.jpg");
     background-size: cover;}}</style>''', unsafe_allow_html=True)
 
