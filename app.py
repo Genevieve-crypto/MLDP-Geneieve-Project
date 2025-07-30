@@ -100,9 +100,9 @@ st.markdown(f''' <style> .stApp {{
     .stButton > button {{
         background-color: #F63366;
         color: white;
-        border-radius: 5px;
+        border-radius: 15px;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 20px;
     }}
     
     </style>''', unsafe_allow_html=True)
