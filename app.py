@@ -37,7 +37,7 @@ Vintage_selected = st.slider("Select vintage", min_value=1, max_value=300, value
 
 
 # Prediction button
-if st.button("Predict", type="primary"):
+if st.button("Predict"):
     # Create dict for input features
     input_data = {
         "Gender" : Gender_selected,
@@ -93,8 +93,7 @@ if st.button("Predict", type="primary"):
 
     
 
-st.markdown(f''' <style> .stApp {{
-   primary-color: #F63366;     
+st.markdown(f''' <style> .stApp {{   
     background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
     background-size: cover;}}
     
@@ -106,9 +105,8 @@ st.markdown(f''' <style> .stApp {{
         font-size: 28px;
     }}
 
-    .stButton > selectbox {{
-        font-size: 28px;
-    }}
+    selectbox {
+        font-size: 6rem !important;
 
  
     
