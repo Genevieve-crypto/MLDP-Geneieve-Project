@@ -103,8 +103,10 @@ st.markdown(f''' <style> .stApp {{
         border-radius: 15px;
         padding: 10px 20px;
         font-size: 28px;
-    }
-
+    }}
+    selectbox{{
+        font-size:28px;
+    }}
 
     </style>''', unsafe_allow_html=True)
 
