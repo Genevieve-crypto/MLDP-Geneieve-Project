@@ -97,13 +97,20 @@ st.markdown(f''' <style> .stApp {{
    primary-color: #F63366;     
     background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
     background-size: cover;}}
+    
     .stButton > button {{
         background-color: #F63366;
         color: white;
         border-radius: 15px;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 28px;
     }}
+
+    .stButton > selectbox {{
+        font-size: 28px;
+    }}
+
+ 
     
     </style>''', unsafe_allow_html=True)
 
