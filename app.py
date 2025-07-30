@@ -98,17 +98,13 @@ st.markdown(f''' <style> .stApp {{
     background-size: cover;}}
     
     .stButton > button {{
-        background-color: #F63366;
+        background-color: #1151F5;
         color: white;
         border-radius: 15px;
         padding: 10px 20px;
         font-size: 28px;
     }}
 
-    .stMarkdown {{
-    align: left;
-    }}
-  
 
     </style>''', unsafe_allow_html=True)
 
