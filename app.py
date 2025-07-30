@@ -104,6 +104,10 @@ st.markdown(f''' <style> .stApp {{
         padding: 10px 20px;
         font-size: 28px;
     }}
+
+    .stMarkdown 
+        {{text-align: left;
+        font-size: 28px;}}
   
 
     </style>''', unsafe_allow_html=True)
