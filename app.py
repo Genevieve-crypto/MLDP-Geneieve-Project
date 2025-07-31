@@ -91,11 +91,15 @@ if st.button("Predict"):
     
 
 st.markdown(f''' 
-    <style> .stApp {{   
+    <style> 
+    .stApp {{   
     background-image: url("https://raw.githubusercontent.com/Genevieve-crypto/MLDP-Geneieve-Project/refs/heads/main/car-background.png");
     background-size: cover;
     }}
 
+    st.markdown{{
+    <h1 style='color:black;'>Insurance Response Prediction</h1>
+    }}
             
     .stButton > button {{
         background-color: #1151F5;
