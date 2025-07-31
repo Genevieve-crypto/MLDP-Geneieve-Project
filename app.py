@@ -98,7 +98,11 @@ st.markdown(f''' <style> .stApp {{
     background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
     background-size: cover;
     text-align: left !important;}}
-    
+
+    /* Override center alignment for titles and text blocks */
+    .stTitle, .stText, .stHeader, .stSubheader, .stMarkdown, .stCaption {{
+        text-align: left !important;
+    }}
     
     .stButton > button {{
         background-color: #1151F5;
