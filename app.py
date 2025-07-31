@@ -61,7 +61,7 @@ if st.button("Predict"):
 
     # One-hot encoding
     df_input_ohe = pd.get_dummies(df_input, 
-                                  columns = ['Gender','Vehicle_Age','Vehicle_Damage'])
+                                  columns = ['Vehicle_Age','Vehicle_Damage'])
     
     # df_input_ohe = df_input_ohe.to_numpy()
 
