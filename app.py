@@ -95,37 +95,19 @@ if st.button("Predict"):
     
 
 st.markdown(f''' <style>
-    /* Align main container content to the left */
-    .block-container {
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
-        text-align: left !important;
-    }
+    <style> .stApp {{   
+    background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
+    background-size: cover;
+    text-align: left !important;}}
 
-    /* Set all text and label colors to white */
-    .stApp, .stText, .stTitle, .stMarkdown, .stRadio > div, .stSlider > div, .stSelectbox > div {
-        color: #ffffff !important;
-        text-align: left !important;
-    }
-
-    label, div[class^='st'], p, span {
-        color: #ffffff !important;
-        text-align: left !important;
-    }
-
-    /* Style the button */
-    .stButton > button {
+            
+    .stButton > button {{
         background-color: #1151F5;
-        color: white !important;
+        color: white;
         border-radius: 15px;
         padding: 10px 20px;
         font-size: 28px;
-    }
+    }}
 
-    /* Set background image */
-    .stApp {
-        background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
-        background-size: cover;
-    }
     </style>''', unsafe_allow_html=True)
 
