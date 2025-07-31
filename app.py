@@ -1,13 +1,16 @@
+# image: https://www.freepik.com/
 import joblib
 import streamlit as st
 import numpy as np
 import pandas as pd
 
+
 model = joblib.load("insurance_model_22July.pkl")
 
 # Streamlit app
 st.title("Insurance Response Prediction")
-
+st.text("Our client is an Insurance company that has provided Health Insurance to its customers, now they need predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.")
+st.title("Now let's put in customer's information for prediction")
 # Define input option
 Gender = ['Male', 'Female']
 Age = (0,100)
@@ -83,9 +86,26 @@ if st.button("Predict"):
     
     # Predict
     y_unseen_pred = model.predict(df_input_reindex)[0]
-    st.success(f"Predicted Insurance Response : ${y_unseen_pred:,.2f}")
+    if y_unseen_pred == 1:
+        result = "Yes" 
+    else:
+        result = "No"
+    st.success(f"Will this client interested in Vehicle Insurance ? Prediction result: {result}")
 
-st.markdown(f''' <style> .stApp {{
-    background-image: url("https://media.istockphoto.com/id/1828732247/photo/different-umbrella.jpg?s=2048x2048&w=is&k=20&c=Sw2fqnolwOM-ZINwgbiaoS_aAY6Zuf3GgDckC1V2QSs=");
-    background-size: cover;}}</style>''', unsafe_allow_html=True)
+    
+
+st.markdown(f''' <style> .stApp {{   
+    background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
+    background-size: cover;}}
+    
+    .stButton > button {{
+        background-color: #1151F5;
+        color: white;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-size: 28px;
+    }}
+
+
+    </style>''', unsafe_allow_html=True)
 
