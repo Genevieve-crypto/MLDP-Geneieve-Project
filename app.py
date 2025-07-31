@@ -98,11 +98,11 @@ st.markdown(f'''
     }}
 
     st.markdown{{
-    <h1 style='color:black;'>Insurance Response Prediction</h1>
+    <h1 style='color:#002147;'>Insurance Response Prediction</h1>
     }}
             
     .stButton > button {{
-        background-color: #1151F5;
+        background-color: #002147;
         color: white;
         border-radius: 15px;
         padding: 10px 20px;
