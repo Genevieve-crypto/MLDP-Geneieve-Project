@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 
-model = joblib.load("insurance_model_22July.pkl")
+model = joblib.load("insurance_model.pkl")
 
 # Streamlit app
 st.title("Insurance Response Prediction")
@@ -94,10 +94,13 @@ if st.button("Predict"):
 
     
 
-st.markdown(f''' <style> .stApp {{   
-    background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
-    background-size: cover;}}
-    
+st.markdown(f''' 
+    <style> .stApp {{   
+    background-image: url("https://raw.githubusercontent.com/Genevieve-crypto/MLDP-Geneieve-Project/refs/heads/main/app-background.jpg");
+    background-size: cover;
+    }}
+
+            
     .stButton > button {{
         background-color: #1151F5;
         color: white;
@@ -105,7 +108,6 @@ st.markdown(f''' <style> .stApp {{
         padding: 10px 20px;
         font-size: 28px;
     }}
-
 
     </style>''', unsafe_allow_html=True)
 
