@@ -9,7 +9,7 @@ model = joblib.load("insurance_model.pkl")
 
 # Streamlit app
 st.title("Insurance Response Prediction")
-st.caption("Our client is an Insurance company that has provided Health Insurance to its customers, now they need predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.")
+st.subheader("Our client is an Insurance company that has provided Health Insurance to its customers, now they need predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.")
 st.subheader("Now let's put in customer's information for prediction")
 # Define input option
 Age = (0,100)
