@@ -96,9 +96,11 @@ if st.button("Predict"):
 
 st.markdown(f''' <style> .stApp {{   
     background-image: url("https://github.com/Genevieve-crypto/MLDP-Geneieve-Project/blob/main/background.jpg?raw=true");
-    background-size: cover;
-    }}
-
+    background-size: cover;}}
+    
+    .stTitle, .stText, .stHeader, .stSubheader, .stMarkdown, .stCaption {{
+        color: black !important;  /* Adjust this to your preferred color */
+        text-align: left !important;}}
     
     .stButton > button {{
         background-color: #1151F5;
