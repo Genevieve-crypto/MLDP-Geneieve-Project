@@ -37,9 +37,7 @@ Vintage_selected = st.slider("Select vintage", min_value=1, max_value=300, value
 if st.button("Predict"):
     # Create dict for input features
     input_data = {
-        "Gender" : Gender_selected,
         "Age" : Age_selected,
-        "Driving_License" : Driving_License_selected,
         "Region_Code" : Region_Code_selected,
         "Previously_Insured" : Previously_Insured_selected,
         "Vehicle_Age" : Vehicle_Age_selected,
@@ -51,9 +49,7 @@ if st.button("Predict"):
 
     # Convert input data to DataFrame
     df_input = pd.DataFrame({
-        "Gender" : [Gender_selected],
         "Age" : [Age_selected],
-        "Driving_License" : [Driving_License_selected],
         "Region_Code" : [Region_Code_selected],
         "Previously_Insured" : [Previously_Insured_selected],
         "Vehicle_Age" : [Vehicle_Age_selected],
@@ -70,10 +66,9 @@ if st.button("Predict"):
     # df_input_ohe = df_input_ohe.to_numpy()
 
     feature_names = [
-    'Age', 'Driving_License', 'Region_Code', 'Previously_Insured',
+    'Age', 'Region_Code', 'Previously_Insured',
     'Annual_Premium', 'Policy_Sales_Channel', 'Vintage',
-    'Gender_Female', 'Gender_Male',
-    'Vehicle_Age_1-2 Year', 'Vehicle_Age_< 1 Year', 'Vehicle_Age_> 2 Years',
+    'Vehicle_Age_1-2 Year', 'Vehicle_Age_< 1 Year', 
     'Vehicle_Damage_No', 'Vehicle_Damage_Yes'
     ]
 
