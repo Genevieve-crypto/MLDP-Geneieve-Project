@@ -12,26 +12,22 @@ st.title("Insurance Response Prediction")
 st.text("Our client is an Insurance company that has provided Health Insurance to its customers, now they need predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.")
 st.subheader("Now let's put in customer's information for prediction")
 # Define input option
-Gender = ['Male', 'Female']
 Age = (0,100)
-Driving_License = [0,1]
 Region_Code = (0,53)
 Previously_Insured = [0,1]
-Vehicle_Age = ['> 2 Years', '1-2 Year', '< 1 Year']
+Vehicle_Age = ['1-2 Year', '< 1 Year']
 Vehicle_Damage = ['Yes', 'No']
 Annual_Premium = (0,550000)
 Policy_Sales_Channel = (0,200)
 Vintage = (0,300)
 
 # user inputs
-Gender_selected = st.selectbox("Select Gender", Gender)
 Age_selected = st.slider("Select age", min_value=1, max_value=100, value=1)
-Driving_License_selected = st.radio("Do you have a driving license?", Driving_License)
 Region_Code_selected = st.slider("Select region code", min_value=1, max_value=100, value=1)
 Previously_Insured_selected = st.radio("Were you previously insuranced?", Previously_Insured)
 Vehicle_Age_selected = st.selectbox("Select vehicle age", Vehicle_Age)
 Vehicle_Damage_selected = st.radio("Was vehicle damaged?", Vehicle_Damage)
-Annual_Premium_selected = st.slider("Select annual premium", min_value=1, max_value=550000, value=1)
+Annual_Premium_selected = st.slider("Select annual premium", min_value=1, max_value=600000, value=1)
 Policy_Sales_Channel_selected = st.slider("Select policy sales channal", min_value=1, max_value=200, value=1)
 Vintage_selected = st.slider("Select vintage", min_value=1, max_value=300, value=1)
 
