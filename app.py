@@ -81,7 +81,7 @@ if st.button("Predict"):
         result = "Yes" 
     else:
         result = "No"
-    st.success(f"Will this client interested in Vehicle Insurance ? Prediction result: {result}")
+    st.success(f"Will this client interested in vehicle insurance ? Prediction result: {result}")
 
     
 
