@@ -91,10 +91,6 @@ st.markdown(f'''
     background-image: url("https://raw.githubusercontent.com/Genevieve-crypto/MLDP-Geneieve-Project/refs/heads/main/car-background.png");
     background-size: cover;
     }}
-
-    st.markdown{{
-    <h1 style='color:#002147;'>Insurance Response Prediction</h1>
-    }}
             
     .stButton > button {{
         background-color: #002147;
