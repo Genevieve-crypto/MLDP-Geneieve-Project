@@ -24,12 +24,12 @@ Vintage = (0,300)
 # user inputs
 Age_selected = st.slider("Select age", min_value=1, max_value=100, value=1)
 Region_Code_selected = st.slider("Select region code", min_value=1, max_value=100, value=1)
-Previously_Insured_selected = st.radio("Were you previously insuranced?", Previously_Insured)
+Previously_Insured_selected = st.radio("Is the cutomer have car insurance previously?", Previously_Insured)
 Vehicle_Age_selected = st.selectbox("Select vehicle age", Vehicle_Age)
 Vehicle_Damage_selected = st.radio("Was vehicle damaged?", Vehicle_Damage)
-Annual_Premium_selected = st.slider("Select annual premium", min_value=1, max_value=600000, value=1)
+Annual_Premium_selected = st.slider("Select annual premium amount", min_value=1, max_value=600000, value=1)
 Policy_Sales_Channel_selected = st.slider("Select policy sales channal", min_value=1, max_value=200, value=1)
-Vintage_selected = st.slider("Select vintage", min_value=1, max_value=300, value=1)
+Vintage_selected = st.slider("Select number of days this customer is associated with the company (vintage)", min_value=1, max_value=300, value=1)
 
 
 
